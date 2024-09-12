@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.e68d2175265298551aa85dbbb9a67b70?rik=NmWnd%2b93IjxnUA&riu=http%3a%2f%2fpre00.deviantart.net%2faed7%2fth%2fpre%2ff%2f2017%2f113%2f4%2f6%2fxayah_and_rakan_icon_by_gokuss4046-db6vttz.png&ehk=7Q5kQlzjDc1LSGWcwPONmoXQbuxeybbI%2fIXNqrFAu%2bI%3d&risl=&pid=ImgRaw&r=0"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Baskervville+SC&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #1d1d1d;
+        color: white;
+      }
+
+      h1 {
+        position: absolute;
+        text-align: center;
+        font-size: 3rem;
+        z-index: 10;
+        bottom: 30%;
+        font-family: "Bad Script", cursive;
+        text-shadow: 3px 3px 3px yellow;
+
+      }
+
+      a{
+        font-style: none;
+        text-decoration: none;
+        color: white;
+      }
+      canvas {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <script defer type="text/javascript" src="js/particle.js"></script>
+    <script defer type="text/javascript" src="js/particle_system.js"></script>
+  </head>
+
+  <body>
+    <!-- Aquí está el título "Feliz Cumpleaños" -->
+    <h1><a href="cake.html">Feliz Cumpleaños</a></h1>
+    <canvas id="container"></canvas>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        var canvas = document.getElementById("container");
+        if (canvas) {
+          var system = new particleSystem({"canvas_id":"container"});
+          system.start();
+        } else {
+          console.error("El canvas no se ha cargado correctamente.");
+        }
+      });
+    </script>
+  </body>
+</html>

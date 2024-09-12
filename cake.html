@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <script src="birthday-cake.js"></script>
+ 		<link rel = "stylesheet" type = "text/css" media = "all" href = "style_cake.css"/>
+        <title>Cake</title>
+        <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/001/931/880/non_2x/sweet-cake-portion-happy-birthday-icon-free-vector.jpg"> 
+    </head>
+    <style>
+        a div{
+            color: antiquewhite;
+            text-shadow: 5px 5px 5px rgb(74, 6, 74);
+        }
+        a div:hover{
+            color: violet;
+            text-shadow: 5px 5px 5px rgb(0, 0, 0);
+        }
+    </style>
+    <body onload="init();">
+        <div class="cake" onClick="putOutCandles();">
+            <div class="icing">
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+            </div>
+            <div class="layer top"></div>
+            <div class="layer middle"></div>
+            <div class="layer bottom"></div>
+        </div>
+        <a href="songs.html"><div id="message_container" class="message"></div></a>
+        <script src="cake.js">
+        </script>
+    </body>
+</html>
